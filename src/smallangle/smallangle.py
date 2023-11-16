@@ -18,10 +18,10 @@ def main():
     show_default=True,
 )
 def sin(number):
-    """Make a dataframe of chosen values and their sinus between 0 and 2 pi
+    """make a dataframe of chosen values and their sinus between 0 and 2 pi
 
     Args:
-        number (int): Amount of steps between 0 and 2 pi
+        number (int): amount of steps between 0 and 2 pi
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
@@ -38,10 +38,10 @@ def sin(number):
     show_default=True,
 )
 def tan(number):
-    """Make dataframe of chosen values and their tangent between 0 and 2 pi
+    """make dataframe of chosen values and their tangent between 0 and 2 pi
 
     Args:
-        number (int): Amount of steps between 0 and 2 pi
+        number (int): amount of steps between 0 and 2 pi
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
@@ -52,7 +52,7 @@ def tan(number):
 @main.command()
 @click.argument("epsilon")
 def approx(epsilon):
-    """Find the upper limit for the small-angle approximation for a chosen accuracy
+    """find the upper limit for the small-angle approximation for a chosen accuracy
 
     Args:
         epsilon (float): accuracy
